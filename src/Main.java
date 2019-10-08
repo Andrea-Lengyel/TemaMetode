@@ -39,7 +39,7 @@ public class Main {
         int sum = X + Y;
         return sum;
     }
-    public static float division(int X, int Y){
+    public static float division(float X, float Y){
         float div = X/Y;
         return div;
     }
@@ -51,7 +51,7 @@ public class Main {
         int rez = (X + Y) % Z;
         return rez;
     }
-    public static float Op3(int a, int b, int c, int d){
+    public static float Op3(float a, float b, float c, float d){
         float rez = a + b * c/d;
         return rez;
     }
