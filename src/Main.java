@@ -41,6 +41,30 @@ public class Main {
         System.out.println("The result of multiplication is: " + result);
 //        Exercise 2
 
+        JavaLogo();
+//        Exercise 3
+        System.out.println(average(3, 4, 6));
+//        Exercise 4
+        robotics();
+//        Exercise 5
+        System.out.println(modul(80,3));
+//        Exercise 6
+
+        float F = 103.5f;
+        System.out.println(temp(F));
+//        Exercise 7
+
+        Float D = 26.15f;
+        System.out.println(distance(D));
+//        Exercise 8
+
+        int d1 = 15;
+        int th = 2;
+        int tm = 3;
+        int ts = 7;
+
+        speed(d1, th, tm, ts);
+//Exercise 9
     }
     public static void printMyName(){
         System.out.println("Hello \nAndrea");
@@ -77,5 +101,49 @@ public class Main {
         public static int multiply(int first, int second) {
         int mult = first * second;
         return mult;
+    }
+
+    public static void JavaLogo()
+    {
+        System.out.println("   J     a    v     v   a");
+        System.out.println("   J    a a    v   v   a a");
+        System.out.println("J  J   aaaaa    V V   aaaaa");
+        System.out.println(" JJ   a     a    V   a     a ");
+    }
+
+    public static float average(float n1, float n2, float n3){
+        float average = (n1 + n2 + n3)/3;
+        return average;
+    }
+
+    public static void robotics()
+    {
+        System.out.println(" +\"\"\"\"\"+ ");
+        System.out.println("[| o o |]");
+        System.out.println(" |  ^  | ");
+        System.out.println(" | '_' |");
+        System.out.println(" +-----+");
+    }
+
+    public static int modul(int n1, int n2){
+        int mod = n1%n2;
+        return mod;
+    }
+    public static float temp(float f){
+        float C = 5/9f*(f-32);
+        return C;
+    }
+    public static float distance(float d){
+        float dist = d * 0.0254f;
+        return dist;
+    }
+
+    public static void speed(float A, float B, float C, float D){
+        float v1 = A/(B * 3600 + C * 60 + D);
+        System.out.println(v1);
+        float v2 = (A/1000)/(B + C/60 + D/3600);
+        System.out.println(v2);
+        float v3 = (A/1609)/(B + C/60 + D/3600);
+        System.out.println(v3);
     }
 }
